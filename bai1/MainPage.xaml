@@ -10,15 +10,18 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <TextBlock Margin="50 ,200,0,0" Text="Employee List" FontSize="20"/>
-        <ListView x:Name="EmployeeItems" Margin="0,250,0,0">
+        <TextBlock Margin="50 ,300,0,0" Text="Employee List" FontSize="20"/>
+        <ListView x:Name="EmployeeItems" Margin="0,350,0,0">
             <ListView.ItemTemplate>
                 <DataTemplate x:DataType="models:Employee" >
                     <ListViewItem>
                         <RelativePanel>
-                            <TextBlock x:Name="Name" Width="100" Margin="40 ,50,0,0" Text="{x:Bind name}" FontSize="20"/>
-                            <TextBlock x:Name="Role" Width="100" RelativePanel.RightOf="Name" Margin="50 ,50,0,0" Text="{x:Bind role}" FontSize="20"/>
-                            <TextBlock RelativePanel.RightOf="Role" Margin="50 ,50,0,0" Text="{x:Bind birthday}" FontSize="20"/>
+                            <TextBlock x:Name="Name" Width="100" Margin="40 ,50,0,0" Text="{x:Bind name}" FontSize="15"/>
+                            
+                            <TextBlock x:Name="Role" Width="100" RelativePanel.RightOf="Name" Margin="50 ,50,0,0" Text="{x:Bind role}" FontSize="15"/>
+                            
+                            <TextBlock RelativePanel.RightOf="Role" Margin="50 ,50,0,0" Text="{x:Bind birthday}" FontSize="15"/>
+                            
                         </RelativePanel>
                     </ListViewItem>
                 </DataTemplate>
