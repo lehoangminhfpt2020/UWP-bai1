@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Windows.Storage;
-namespace Nhom1.Services
+namespace Bai1.Services
 {
     class FileHandleService
     {
